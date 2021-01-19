@@ -4,16 +4,16 @@ import (
 	"bank/utils"
 	"context"
 	"testing"
-	"time"
+	//"time"
 	// "database/sql"
 
 	"github.com/stretchr/testify/require"
 )
 
-func TestCreateEntry(t *testing.T, account Account) Entry {
+func CreateRandomEntry(t *testing.T, account Account) Entry {
 	arg := CreateEntryParams{
 		AccountID: account.ID,
-		Amount: utils.RandomMoney()
+		Amount: utils.RandomMoney(),
 	}
 
 	entry, err := testQueries.CreateEntry(context.Background(), arg)
@@ -28,3 +28,4 @@ func TestCreateEntry(t *testing.T, account Account) Entry {
 
 	return entry
 }
+
