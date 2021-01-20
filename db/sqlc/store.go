@@ -6,6 +6,7 @@ import (
 	"context"
 )
 
+// Store ....
 type Store struct {
 	*Queries
 	db *sql.DB
