@@ -31,6 +31,6 @@ func CreateRandomEntry(t *testing.T, account Account) Entry {
 
 func TestCreateEntry(t *testing.T) {
 	account := createRandomAccount(t)
-	createRandomEntry(t, account)
+	CreateRandomEntry(t, account)
 }
 
