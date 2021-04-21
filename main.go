@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	db "bank/database"
-	"bank/routes"
+	//"bank/routes"
 	"github.com/joho/godotenv"
 )
 
@@ -15,5 +15,5 @@ func init() {
 
 func main() {
 	db.ConnectDB()
-	routes.Initialize()
+	//routes.Initialize()
 }
